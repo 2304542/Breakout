@@ -4,8 +4,12 @@
 PowerupFireBall::PowerupFireBall(sf::RenderWindow* window, Paddle* paddle, Ball* ball)
     : PowerupBase(window, paddle, ball)
 {
-    _sprite.setFillColor(ballEffectsColour);
-}
+    
+    fireTexture.loadFromFile("Textures/Fire.jpg");
+    _sprite.setTexture(&fireTexture);
+   
+    
+}   
 
 PowerupFireBall::~PowerupFireBall()
 {
