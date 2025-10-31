@@ -4,7 +4,7 @@ PowerupSmallPaddle::PowerupSmallPaddle(sf::RenderWindow* window, Paddle* paddle,
     : PowerupBase(window, paddle, ball)
 {
     //_sprite.setFillColor(paddleEffectsColour); // Same colour as SmallPaddle
-    smallTexture.loadFromFile("Textures/Mouse.png");
+    smallTexture.loadFromFile("Textures/Mouse.png"); // loading and setting texture
     _sprite.setTexture(&smallTexture);
     
 }

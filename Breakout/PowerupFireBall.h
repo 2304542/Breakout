@@ -7,7 +7,7 @@ public:
     ~PowerupFireBall();
 
     std::pair<POWERUPS, float> applyEffect() override; // Method to apply the power-up effect
-    sf::Texture fireTexture;
+    sf::Texture fireTexture; // fire
 
 };
 

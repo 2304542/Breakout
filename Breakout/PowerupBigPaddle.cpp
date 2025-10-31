@@ -4,7 +4,7 @@ PowerupBigPaddle::PowerupBigPaddle(sf::RenderWindow* window, Paddle* paddle, Bal
     : PowerupBase(window, paddle, ball)
 {
    // _sprite.setFillColor(paddleEffectsColour); // Same colour as smallPaddle
-    bigTexture.loadFromFile("Textures/Elephant.jpg");
+    bigTexture.loadFromFile("Textures/Elephant.jpg"); // loading and setting texture
     _sprite.setTexture(&bigTexture);
 }
 

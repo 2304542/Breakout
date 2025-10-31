@@ -5,7 +5,7 @@ PowerupFireBall::PowerupFireBall(sf::RenderWindow* window, Paddle* paddle, Ball*
     : PowerupBase(window, paddle, ball)
 {
     
-    fireTexture.loadFromFile("Textures/Fire.jpg");
+    fireTexture.loadFromFile("Textures/Fire.jpg"); // loading and setting texture
     _sprite.setTexture(&fireTexture);
    
     

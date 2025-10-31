@@ -3,7 +3,7 @@
 PowerupSlowBall::PowerupSlowBall(sf::RenderWindow* window, Paddle* paddle, Ball* ball)
     : PowerupBase(window, paddle, ball)
 {
-    slowTexture.loadFromFile("Textures/Snail.png");
+    slowTexture.loadFromFile("Textures/Snail.png"); // loading and setting texture
     _sprite.setTexture(&slowTexture);
 }
 
