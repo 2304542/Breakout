@@ -2,11 +2,9 @@
 #include "Ball.h"
 #include "PowerupManager.h"
 #include <iostream>
-#include <Common/AkMemoryMgr.h>
-#include <AkModule.h>
-#include <AkJobWorkerMgr.h>
-#include <AK/SoundEngine/Common/AkSoundEngine.h>
+
 #include <AK/IBytes.h>
+
 
 GameManager::GameManager(sf::RenderWindow* window)
     : _window(window), _paddle(nullptr), _ball(nullptr), _brickManager(nullptr), _powerupManager(nullptr),
