@@ -107,14 +107,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)/SFML/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)/SFML/include;$(WWISESDK)\include</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(ProjectDir)/SFML/lib</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)/SFML/lib;C:\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\Win32_vc170</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;%(AdditionalDependencies);AkSoundEngine.lib;AkMemoryMgr.lib;AkStreamMgr.lib;AkSpatialAudio.lib;AkMusicEngine.lib;CommunicationCentral.lib;wsock32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -138,6 +138,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkDefaultLowLevelIODispatcher.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkFileLocationBase.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkFilePackage.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkFilePackageLUT.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkGeneratedSoundBanksResolver.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkJobWorkerMgr.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkMultipleFileLocation.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkPlatformProfilerHookStubs.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Win32\AkDefaultIOHookDeferred.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Win32\AkPlatformProfilerHooks.cpp" />
+    <ClCompile Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Win32\stdafx.cpp" />
     <ClCompile Include="Ball.cpp" />
     <ClCompile Include="Brick.cpp" />
     <ClCompile Include="BrickManager.cpp" />
@@ -157,6 +168,20 @@
     <ClCompile Include="UI.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkDefaultLowLevelIODispatcher.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkFileHelpersBase.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkFileLocationBase.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkFilePackage.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkFilePackageLowLevelIO.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkFilePackageLowLevelIODeferred.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkFilePackageLUT.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkGeneratedSoundBanksResolver.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkJobWorkerMgr.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkMultipleFileLocation.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkPlatformProfilerHooks.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Win32\AkDefaultIOHookDeferred.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Win32\AkFileHelpers.h" />
+    <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Win32\stdafx.h" />
     <ClInclude Include="Ball.h" />
     <ClInclude Include="Brick.h" />
     <ClInclude Include="BrickManager.h" />
@@ -172,6 +197,9 @@
     <ClInclude Include="PowerupSlowBall.h" />
     <ClInclude Include="PowerupSmallPaddle.h" />
     <ClInclude Include="UI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkFilePackageLowLevelIO.inl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
