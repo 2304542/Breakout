@@ -114,7 +114,7 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalLibraryDirectories>$(ProjectDir)/SFML/lib;C:\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\Win32_vc170</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;%(AdditionalDependencies);AkSoundEngine.lib;AkMemoryMgr.lib;AkStreamMgr.lib;AkSpatialAudio.lib;AkMusicEngine.lib;CommunicationCentral.lib;wsock32.lib</AdditionalDependencies>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;"AkSoundEngine.lib";AkMemoryMgr.lib;AkStreamMgr.lib;AkSpatialAudio.lib;AkMusicEngine.lib;CommunicationCentral.lib;wsock32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -166,6 +166,7 @@
     <ClCompile Include="PowerupSlowBall.cpp" />
     <ClCompile Include="PowerupSmallPaddle.cpp" />
     <ClCompile Include="UI.cpp" />
+    <ClCompile Include="WwiseWrapper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkDefaultLowLevelIODispatcher.h" />
@@ -197,6 +198,7 @@
     <ClInclude Include="PowerupSlowBall.h" />
     <ClInclude Include="PowerupSmallPaddle.h" />
     <ClInclude Include="UI.h" />
+    <ClInclude Include="WwiseWrapper.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\..\..\..\..\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common\AkFilePackageLowLevelIO.inl" />
