@@ -1,0 +1,76 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "154",
+  "SoundBanks": [
+   {
+    "Id": "1492078141",
+    "Type": "User",
+    "GUID": "{29C48CEA-8993-4D08-8E05-C67B8CA27D08}",
+    "Language": "SFX",
+    "Hash": "{827A5970-F667-B262-0BD5-0128AE04F726}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\BreakoutSoundbank",
+    "ShortName": "BreakoutSoundbank",
+    "Path": "BreakoutSoundbank.bnk",
+    "Media": [
+     {
+      "Id": "332058312",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Heartbeat 2.wav",
+      "CachePath": "C2/{C2152299-2546-DBC4-F01B-138550E507F2}.wem"
+     },
+     {
+      "Id": "501490126",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Track Version 3.wav",
+      "CachePath": "54/{54E90646-E51C-9719-6AE6-F20D6DE260DB}.wem"
+     },
+     {
+      "Id": "675242037",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Loop.wav",
+      "CachePath": "48/{487311D0-8211-F559-7F61-0A8568E71EB5}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2779759174",
+      "Name": "BreakoutEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\BreakoutEvent",
+      "GUID": "{511DC61E-23A5-42FF-AFD5-31BC90A6FB91}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "501490126"
+       },
+       {
+        "Id": "675242037"
+       }
+      ]
+     },
+     {
+      "Id": "3980840373",
+      "Name": "HeartbeatEvent",
+      "ObjectPath": "\\Events\\Default Work Unit\\HeartbeatEvent",
+      "GUID": "{C5E2DD46-BDD7-4EE2-8BC2-EC249D5F2C6A}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "332058312"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D6311F35-9E50-8150-0BDF-23BFA0455164}"
+ }
+}

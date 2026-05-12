@@ -107,14 +107,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\include;$(ProjectDir)/SFML/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)/SFML/include;$(WWISESDK)/include;C:\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\include;C:\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\samples\SoundEngine\Common</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp17</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalLibraryDirectories>$(ProjectDir)/SFML/lib;C:\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\Win32_vc170</AdditionalLibraryDirectories>
-      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;"AkSoundEngine.lib";AkMemoryMgr.lib;AkStreamMgr.lib;AkSpatialAudio.lib;AkMusicEngine.lib;CommunicationCentral.lib;wsock32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)/SFML/lib;C:\Program Files (x86)\Audiokinetic\Wwise2024.1.8.8898\SDK\x64_vc170\Debug\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;%(AdditionalDependencies);AkSoundEngine.lib;AkMemoryMgr.lib;AkStreamMgr.lib;AkSpatialAudio.lib;AkMusicEngine.lib;CommunicationCentral.lib;wsock32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

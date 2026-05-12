@@ -14,5 +14,6 @@ PowerupSlowBall::~PowerupSlowBall()
 std::pair<POWERUPS, float> PowerupSlowBall::applyEffect()
 {
     _ball->setVelocity(0.5f, 5.0f);
+    AK::SoundEngine::SetState("BreakoutStates", "Slow");
     return { slowBall, 5.0f };
 }

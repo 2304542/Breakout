@@ -16,6 +16,7 @@ public:
     void initialize();
     void update(float dt);
     void loseLife();
+    void heartbeatController();
     void render();
     void levelComplete();
     void powerupEffect(POWERUPS pu, float t);

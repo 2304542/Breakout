@@ -24,8 +24,298 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="BreakoutStates" ID="{282B9E46-180A-4182-B114-758EFEBF64D4}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Slow" ID="{7980A115-EBE9-41DF-B388-02B56E39F9EB}"/>
+								<CustomState Name="" ID="{49E7A252-1C28-41F6-A42C-AE415B619221}" ShortID="314024873">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Small" ID="{12C5D241-36A2-458F-A428-17FEEA68D3E9}"/>
+								<CustomState Name="" ID="{140833ED-F35A-4869-8F32-3FFCE6FFC21B}" ShortID="351943799">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Fast" ID="{C8743FF0-11E5-4BBD-B008-E7D500CA2D61}"/>
+								<CustomState Name="" ID="{9396836C-20F4-4762-9A2D-E42A40E1AC9C}" ShortID="1045255684">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Fire" ID="{DDD2B803-0756-4C5B-87C8-9721EC092A2F}"/>
+								<CustomState Name="" ID="{4A0CE97C-E853-45D8-AD4D-F3834D812C9C}" ShortID="548147345">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32" Value="1000"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="None" ID="{C2F53FA4-DDC6-4DD9-86C3-8634AC53C905}"/>
+								<CustomState Name="" ID="{8610A52A-C110-4A93-A489-E5BCB78DD2BD}" ShortID="446208130">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Big" ID="{9D62E725-F950-4E41-8C9C-8571F8E9F1A1}"/>
+								<CustomState Name="" ID="{F20C48A6-8FB6-4507-ACE0-9AF98060DA7F}" ShortID="500748466">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="Loop" ID="{E3151698-A427-44E7-9EBB-E4BACE30A78A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Track Version 3" ID="{4693DA10-0842-429C-921D-C25A986B05CA}" ShortID="362704537">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB241402-7335-44F0-8B8F-05556E8E147C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{95632075-7787-4F59-889D-BC2BBF54DA84}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Track Version 3" ID="{C1E2BD13-E72B-4E93-BD12-22AD56D3EC64}">
+							<PropertyList>
+								<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+							</PropertyList>
+							<Language>SFX</Language>
+							<AudioFile>Track Version 3.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="501490126"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="BreakoutStates" ID="{282B9E46-180A-4182-B114-758EFEBF64D4}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="Slow" ID="{7980A115-EBE9-41DF-B388-02B56E39F9EB}"/>
+								<CustomState Name="" ID="{CB9E4881-F54D-464A-BE59-846A55F5FB7B}" ShortID="1017852825">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32" Value="-1200"/>
+										<Property Name="Volume" Type="Real64" Value="-6"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Small" ID="{12C5D241-36A2-458F-A428-17FEEA68D3E9}"/>
+								<CustomState Name="" ID="{F0A00AE8-09EA-45C6-8CDE-F6A796A69CE3}" ShortID="57749987">
+									<PropertyList>
+										<Property Name="Highpass" Type="int16" Value="64"/>
+										<Property Name="Volume" Type="Real64" Value="-6"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Fast" ID="{C8743FF0-11E5-4BBD-B008-E7D500CA2D61}"/>
+								<CustomState Name="" ID="{61D5FF74-527E-4138-BB68-3A6DCE344FE4}" ShortID="941065279">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32" Value="1200"/>
+										<Property Name="Volume" Type="Real64" Value="-6"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Fire" ID="{DDD2B803-0756-4C5B-87C8-9721EC092A2F}"/>
+								<CustomState Name="" ID="{07BB0F8A-1BAB-416B-8081-DBC85514E905}" ShortID="930093695">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-108"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="None" ID="{C2F53FA4-DDC6-4DD9-86C3-8634AC53C905}"/>
+								<CustomState Name="" ID="{17A4E680-DB2F-4133-B361-8C94E48C9144}" ShortID="88288140">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="-6"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="Big" ID="{9D62E725-F950-4E41-8C9C-8571F8E9F1A1}"/>
+								<CustomState Name="" ID="{368CB1F9-94FE-4392-A183-42CEAC79C7C4}" ShortID="963865052">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16" Value="64"/>
+										<Property Name="MakeUpGain" Type="Real64" Value="16"/>
+										<Property Name="Volume" Type="Real64" Value="-6"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="Track Version 3" ID="{C1E2BD13-E72B-4E93-BD12-22AD56D3EC64}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Heartbeat 2" ID="{41DB0052-6BA1-4274-A947-637302F73D27}" ShortID="962723580">
+					<PropertyList>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB241402-7335-44F0-8B8F-05556E8E147C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{95632075-7787-4F59-889D-BC2BBF54DA84}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Heartbeat 2" ID="{90E73B35-0F87-4628-A7E6-309A8CF313B6}">
+							<Language>SFX</Language>
+							<AudioFile>Heartbeat 2.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="332058312"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<StateInfo>
+						<StateGroupList>
+							<StateGroupInfo>
+								<StateGroupRef Name="Lives" ID="{299C7DB8-0F6E-430A-9ABE-5560BC777D6C}"/>
+							</StateGroupInfo>
+						</StateGroupList>
+						<CustomStateList>
+							<CustomState>
+								<StateRef Name="OneLife" ID="{279A687F-BEF0-422A-835E-8887A96D53DA}"/>
+								<CustomState Name="" ID="{D6D37197-EB66-4BD3-A21F-B4CE80DAF753}" ShortID="96293633">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32" Value="1900"/>
+										<Property Name="Volume" Type="Real64" Value="6"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="None" ID="{74034381-D05F-4738-B209-776300802E26}"/>
+								<CustomState Name="" ID="{D89BEB28-2870-489F-9273-7A106007B958}" ShortID="918065406">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64" Value="6"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+							<CustomState>
+								<StateRef Name="TwoLives" ID="{C199D615-77B5-4F51-999D-6456C4B6F44D}"/>
+								<CustomState Name="" ID="{E2A7E069-A95D-450A-AB12-93FB37419EB3}" ShortID="893756664">
+									<PropertyList>
+										<Property Name="Pitch" Type="int32" Value="900"/>
+										<Property Name="Volume" Type="Real64" Value="6"/>
+									</PropertyList>
+								</CustomState>
+							</CustomState>
+						</CustomStateList>
+					</StateInfo>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<Reference>
+								<Local>
+									<RTPC Name="" ID="{94B638ED-B1C0-473C-A4BC-F203F5C28A6A}" ShortID="712864420">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Lowpass"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Health" ID="{7137B2AF-792F-4E8A-8D60-715B61FF1D89}" WorkUnitID="{14DD4864-9860-40DC-B091-7C40DB99DC98}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{3012607B-B58B-4E9E-842B-3FCB92B2E0C5}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-100</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>100</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</Local>
+							</Reference>
+						</ObjectList>
+					</ObjectLists>
+					<ActiveSourceList>
+						<ActiveSource Name="Heartbeat 2" ID="{90E73B35-0F87-4628-A7E6-309A8CF313B6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="WinSFX" ID="{29087514-FD45-4FE1-B0BA-F234CA6EC8F1}" ShortID="590341223">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB241402-7335-44F0-8B8F-05556E8E147C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{95632075-7787-4F59-889D-BC2BBF54DA84}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="WinSFX" ID="{B0A43DD0-FB43-4D34-A585-DEE8C9D23CB1}">
+							<Language>SFX</Language>
+							<AudioFile>WinSFX.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="668880388"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="WinSFX" ID="{B0A43DD0-FB43-4D34-A585-DEE8C9D23CB1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="LoseSFX" ID="{4D8D1F62-0421-4F95-A2B4-FCD4D161BD5D}" ShortID="96848127">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB241402-7335-44F0-8B8F-05556E8E147C}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{95632075-7787-4F59-889D-BC2BBF54DA84}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="LoseSFX" ID="{8D1186AA-A385-4D82-ABC7-368011B79F3E}">
+							<Language>SFX</Language>
+							<AudioFile>LoseSFX.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="89316544"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="LoseSFX" ID="{8D1186AA-A385-4D82-ABC7-368011B79F3E}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

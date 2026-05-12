@@ -37,17 +37,17 @@ void GameManager::update(float dt)
     _ui->updatePowerupText(_powerupInEffect);
     _powerupInEffect.second -= dt;
     
-
-    if (_lives <= 0)
-    {
+      if (_lives <= 0)
+      {
         _masterText.setString("Game over.");
         return;
-    }
+      }
     if (_levelComplete)
     {
         _masterText.setString("Level completed.");
         return;
     }
+ 
     // pause and pause handling
     if (_pauseHold > 0.f) _pauseHold -= dt;
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::P))
@@ -93,9 +93,18 @@ void GameManager::update(float dt)
 void GameManager::loseLife()
 {
     _lives--;
+  
     _ui->lifeLost(_lives);
 
-    // TODO screen shake.
+}
+
+void GameManager::heartbeatController() {
+    if (_lives == 2) {
+        AK::SoundEngine::SetState("Lives", "TwoLives");
+    }
+    if (_lives == 1) {
+        AK::SoundEngine::SetState("Lives", "OneLife");
+    }
 }
 
 void GameManager::render()

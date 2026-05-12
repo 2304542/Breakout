@@ -11,6 +11,9 @@
 #include "PowerupFireBall.h"
 #include "Paddle.h"
 #include "Ball.h"
+#include <iostream>
+#include "WwiseWrapper.h"
+#include <AK/IBytes.h>
 
 
 class PowerupManager

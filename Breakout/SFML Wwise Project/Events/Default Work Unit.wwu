@@ -14,6 +14,87 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="BreakoutEvent" ID="{511DC61E-23A5-42FF-AFD5-31BC90A6FB91}">
+					<ChildrenList>
+						<Action Name="" ID="{437D0D08-F9D2-45AC-BE74-9627820EF9FC}" ShortID="414185639">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Track Version 3" ID="{4693DA10-0842-429C-921D-C25A986B05CA}" WorkUnitID="{5E89A391-8B09-4F67-959D-0CD33D6B5A3B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{A1A4CBB9-B925-4A67-969B-CEAFCB7A455F}" ShortID="771938846">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Loop" ID="{804BF16A-6F33-4BDA-93B6-FDA7BAF0B83D}" WorkUnitID="{5E89A391-8B09-4F67-959D-0CD33D6B5A3B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="HeartbeatEvent" ID="{C5E2DD46-BDD7-4EE2-8BC2-EC249D5F2C6A}">
+					<ChildrenList>
+						<Action Name="" ID="{E1A6FFAD-B512-48CA-8790-195AF76856D3}" ShortID="777370089">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Heartbeat 2" ID="{41DB0052-6BA1-4274-A947-637302F73D27}" WorkUnitID="{5E89A391-8B09-4F67-959D-0CD33D6B5A3B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Win" ID="{2F4B55D6-3C1D-48C3-BB6D-49529FA6D800}">
+					<ChildrenList>
+						<Action Name="" ID="{0100CA5E-74F5-4ED6-9F87-FCCAA5F92DCC}" ShortID="911063320">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WinSFX" ID="{29087514-FD45-4FE1-B0BA-F234CA6EC8F1}" WorkUnitID="{5E89A391-8B09-4F67-959D-0CD33D6B5A3B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{D5164DA0-1597-465B-86F0-735B0238FE5A}" ShortID="124831969">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+							<ChildrenList>
+								<EventActionException Name="" ID="{2A878D05-1C15-479B-A6B0-DA0391F963CB}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="WinSFX" ID="{29087514-FD45-4FE1-B0BA-F234CA6EC8F1}" WorkUnitID="{5E89A391-8B09-4F67-959D-0CD33D6B5A3B}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+							</ChildrenList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Lose" ID="{D1EA9556-95A1-4E89-81D2-C36D1350D4AE}">
+					<ChildrenList>
+						<Action Name="" ID="{A5DE8DEA-04F5-41BE-9710-3EC1697063CD}" ShortID="93949008">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="LoseSFX" ID="{4D8D1F62-0421-4F95-A2B4-FCD4D161BD5D}" WorkUnitID="{5E89A391-8B09-4F67-959D-0CD33D6B5A3B}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{7DEF59A7-7229-482C-8BA1-2C3DDD072E46}" ShortID="459965148">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="3"/>
+							</PropertyList>
+							<ReferenceList/>
+							<ChildrenList>
+								<EventActionException Name="" ID="{1F080CBA-957F-4535-AC1D-F0996562C85F}">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="LoseSFX" ID="{4D8D1F62-0421-4F95-A2B4-FCD4D161BD5D}" WorkUnitID="{5E89A391-8B09-4F67-959D-0CD33D6B5A3B}"/>
+										</Reference>
+									</ReferenceList>
+								</EventActionException>
+							</ChildrenList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

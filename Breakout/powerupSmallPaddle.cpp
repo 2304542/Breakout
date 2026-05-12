@@ -16,5 +16,6 @@ PowerupSmallPaddle::~PowerupSmallPaddle()
 std::pair<POWERUPS, float> PowerupSmallPaddle::applyEffect()
 {
     _paddle->setWidth(0.67f, 5.0f);
+    AK::SoundEngine::SetState("BreakoutStates", "Small");
     return { smallPaddle, 5.0f };
 }

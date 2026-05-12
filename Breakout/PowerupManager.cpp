@@ -24,6 +24,7 @@ void PowerupManager::update(float dt)
         if (_powerupInEffect->second <= 0)
         {
             _powerupInEffect.reset();
+            AK::SoundEngine::SetState("BreakoutStates", "None");
         }
     }
 

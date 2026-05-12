@@ -1,0 +1,24 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2779759174	BreakoutEvent			\Default Work Unit\BreakoutEvent	
+	3980840373	HeartbeatEvent			\Default Work Unit\HeartbeatEvent	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	1110328264	BreakoutStates			\Default Work Unit\BreakoutStates	
+	1786884982	Lives			\Default Work Unit\Lives	
+
+State	ID	Name	State Group			Notes
+	647611021	Big	BreakoutStates			
+	748895195	None	BreakoutStates			
+	787604482	Slow	BreakoutStates			
+	1846755610	Small	BreakoutStates			
+	2678880713	Fire	BreakoutStates			
+	2965380179	Fast	BreakoutStates			
+	748895195	None	Lives			
+	3803968093	OneLife	Lives			
+	4111691006	TwoLives	Lives			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	332058312	Heartbeat 2	C:\Users\jacke\Documents\GitHub\Breakout\Breakout\SFML Wwise Project\.cache\C2\{C2152299-2546-DBC4-F01B-138550E507F2}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Heartbeat 2		151852
+	501490126	Track Version 3	C:\Users\jacke\Documents\GitHub\Breakout\Breakout\SFML Wwise Project\.cache\54\{54E90646-E51C-9719-6AE6-F20D6DE260DB}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Track Version 3		12000160
+	675242037	Loop	C:\Users\jacke\Documents\GitHub\Breakout\Breakout\SFML Wwise Project\.cache\48\{487311D0-8211-F559-7F61-0A8568E71EB5}.wem		\Actor-Mixer Hierarchy\Default Work Unit\Loop		384096
+

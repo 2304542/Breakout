@@ -16,6 +16,7 @@ Ball::~Ball()
 
 void Ball::update(float dt)
 {
+    _gameManager->heartbeatController();
     // check for powerup, tick down or correct
     if (_timeWithPowerupEffect > 0.f)
     {

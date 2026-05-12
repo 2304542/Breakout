@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{292E542A-3870-4D00-AB79-C5C7237FCABC}" SchemaVersion="123">
 	<States>
-		<WorkUnit Name="Default Work Unit" ID="{292E542A-3870-4D00-AB79-C5C7237FCABC}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{292E542A-3870-4D00-AB79-C5C7237FCABC}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="BreakoutStates" ID="{282B9E46-180A-4182-B114-758EFEBF64D4}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{C2F53FA4-DDC6-4DD9-86C3-8634AC53C905}"/>
+						<State Name="Fire" ID="{DDD2B803-0756-4C5B-87C8-9721EC092A2F}"/>
+						<State Name="Slow" ID="{7980A115-EBE9-41DF-B388-02B56E39F9EB}"/>
+						<State Name="Fast" ID="{C8743FF0-11E5-4BBD-B008-E7D500CA2D61}"/>
+						<State Name="Big" ID="{9D62E725-F950-4E41-8C9C-8571F8E9F1A1}"/>
+						<State Name="Small" ID="{12C5D241-36A2-458F-A428-17FEEA68D3E9}"/>
+					</ChildrenList>
+				</StateGroup>
+				<StateGroup Name="Lives" ID="{299C7DB8-0F6E-430A-9ABE-5560BC777D6C}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="0"/>
+					</PropertyList>
+					<ChildrenList>
+						<State Name="None" ID="{74034381-D05F-4738-B209-776300802E26}"/>
+						<State Name="TwoLives" ID="{C199D615-77B5-4F51-999D-6456C4B6F44D}"/>
+						<State Name="OneLife" ID="{279A687F-BEF0-422A-835E-8887A96D53DA}"/>
+					</ChildrenList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
 	</States>
 </WwiseDocument>

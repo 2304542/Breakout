@@ -10,6 +10,14 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="BreakoutSoundbank" ID="{29C48CEA-8993-4D08-8E05-C67B8CA27D08}">
+					<ObjectInclusionList>
+						<ObjectRef Name="BreakoutEvent" ID="{511DC61E-23A5-42FF-AFD5-31BC90A6FB91}" WorkUnitID="{B8DABCA1-9F7E-47C7-AA3D-28A82C497886}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="HeartbeatEvent" ID="{C5E2DD46-BDD7-4EE2-8BC2-EC249D5F2C6A}" WorkUnitID="{B8DABCA1-9F7E-47C7-AA3D-28A82C497886}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

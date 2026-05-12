@@ -1,3 +1,18 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	1110328264	BreakoutStates			\Default Work Unit\BreakoutStates	
+	1786884982	Lives			\Default Work Unit\Lives	
+
+State	ID	Name	State Group			Notes
+	647611021	Big	BreakoutStates			
+	748895195	None	BreakoutStates			
+	787604482	Slow	BreakoutStates			
+	1846755610	Small	BreakoutStates			
+	2678880713	Fire	BreakoutStates			
+	2965380179	Fast	BreakoutStates			
+	748895195	None	Lives			
+	3803968093	OneLife	Lives			
+	4111691006	TwoLives	Lives			
+
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
 
