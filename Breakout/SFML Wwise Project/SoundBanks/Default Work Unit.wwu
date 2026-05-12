@@ -14,7 +14,6 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="BreakoutEvent" ID="{511DC61E-23A5-42FF-AFD5-31BC90A6FB91}" WorkUnitID="{B8DABCA1-9F7E-47C7-AA3D-28A82C497886}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Win" ID="{2F4B55D6-3C1D-48C3-BB6D-49529FA6D800}" WorkUnitID="{B8DABCA1-9F7E-47C7-AA3D-28A82C497886}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Lose" ID="{D1EA9556-95A1-4E89-81D2-C36D1350D4AE}" WorkUnitID="{B8DABCA1-9F7E-47C7-AA3D-28A82C497886}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="HeartbeatEvent" ID="{C5E2DD46-BDD7-4EE2-8BC2-EC249D5F2C6A}" WorkUnitID="{B8DABCA1-9F7E-47C7-AA3D-28A82C497886}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
