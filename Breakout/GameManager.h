@@ -19,6 +19,7 @@ public:
     void heartbeatController();
     void render();
     void levelComplete();
+    void GameOver();
     void powerupEffect(POWERUPS pu, float t);
 
     Paddle* getPaddle() const;
@@ -35,6 +36,7 @@ private:
     float _timeLastPowerupSpawned;
     int _lives;
     bool _levelComplete;
+    bool _isGameOver;
     std::pair<POWERUPS, float> _powerupInEffect;
 
     sf::Font _font;

@@ -296,28 +296,6 @@
 						<ActiveSource Name="WinSFX" ID="{B0A43DD0-FB43-4D34-A585-DEE8C9D23CB1}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="LoseSFX" ID="{4D8D1F62-0421-4F95-A2B4-FCD4D161BD5D}" ShortID="96848127">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{DB241402-7335-44F0-8B8F-05556E8E147C}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{95632075-7787-4F59-889D-BC2BBF54DA84}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="LoseSFX" ID="{8D1186AA-A385-4D82-ABC7-368011B79F3E}">
-							<Language>SFX</Language>
-							<AudioFile>LoseSFX.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="89316544"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="LoseSFX" ID="{8D1186AA-A385-4D82-ABC7-368011B79F3E}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

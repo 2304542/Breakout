@@ -37,14 +37,14 @@ void GameManager::update(float dt)
     _ui->updatePowerupText(_powerupInEffect);
     _powerupInEffect.second -= dt;
     
-      if (_lives <= 0)
-      {
-        _masterText.setString("Game over.");
-        return;
-      }
+    if (_lives == 0)
+    {
+      _masterText.setString("Game over.");
+      return;
+    }
     if (_levelComplete)
     {
-        _masterText.setString("Level completed.");
+        _masterText.setString("Level completed!");
         return;
     }
  
@@ -74,7 +74,7 @@ void GameManager::update(float dt)
     _time += dt;
 
 
-    if (_time > _timeLastPowerupSpawned + POWERUP_FREQUENCY && rand()%700 == 0)      // TODO parameterise
+    if (_time > _timeLastPowerupSpawned + POWERUP_FREQUENCY && rand()%5 == 0)      
     {
         _powerupManager->spawnPowerup();
         _timeLastPowerupSpawned = _time;
@@ -105,6 +105,7 @@ void GameManager::heartbeatController() {
     if (_lives == 1) {
         AK::SoundEngine::SetState("Lives", "OneLife");
     }
+
 }
 
 void GameManager::render()
@@ -120,7 +121,9 @@ void GameManager::render()
 void GameManager::levelComplete()
 {
     _levelComplete = true;
+    AK::SoundEngine::PostEvent(AKTEXT("Win"), 1);
 }
+
 
 sf::RenderWindow* GameManager::getWindow() const { return _window; }
 UI* GameManager::getUI() const { return _ui; }

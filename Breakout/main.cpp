@@ -38,7 +38,8 @@ int main()
 
 		AK::SoundEngine::PostEvent(AKTEXT("BreakoutEvent"), gameObjectId);
 		AK::SoundEngine::PostEvent(AKTEXT("HeartbeatEvent"), gameObjectId);
-		AK::SoundEngine::PostEvent(AKTEXT("Lose"), gameObjectId);
+		
+		
 
 	}
 

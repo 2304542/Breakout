@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{29C48CEA-8993-4D08-8E05-C67B8CA27D08}",
     "Language": "SFX",
-    "Hash": "{827A5970-F667-B262-0BD5-0128AE04F726}",
+    "Hash": "{82366473-6BE8-2632-CA15-A0A32DBE333F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\BreakoutSoundbank",
     "ShortName": "BreakoutSoundbank",
     "Path": "BreakoutSoundbank.bnk",
@@ -30,6 +30,14 @@
       "Location": "Memory",
       "ShortName": "Track Version 3.wav",
       "CachePath": "54/{54E90646-E51C-9719-6AE6-F20D6DE260DB}.wem"
+     },
+     {
+      "Id": "668880388",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WinSFX.wav",
+      "CachePath": "82/{82F07DFF-FEC8-CE19-11FD-30F2DEFF5B9C}.wem"
      },
      {
       "Id": "675242037",
@@ -67,10 +75,32 @@
         "Id": "332058312"
        }
       ]
+     },
+     {
+      "Id": "979765101",
+      "Name": "Win",
+      "ObjectPath": "\\Events\\Default Work Unit\\Win",
+      "GUID": "{2F4B55D6-3C1D-48C3-BB6D-49529FA6D800}",
+      "DurationType": "OneShot",
+      "DurationMin": "3.676984",
+      "DurationMax": "3.676984",
+      "MediaRefs": [
+       {
+        "Id": "668880388"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "3677180323",
+      "Name": "Health",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Health",
+      "GUID": "{7137B2AF-792F-4E8A-8D60-715B61FF1D89}"
      }
     ]
    }
   ],
-  "FileHash": "{D6311F35-9E50-8150-0BDF-23BFA0455164}"
+  "FileHash": "{CD900585-CA8C-1917-1EC2-DE83840B97A7}"
  }
 }

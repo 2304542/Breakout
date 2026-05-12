@@ -69,32 +69,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Lose" ID="{D1EA9556-95A1-4E89-81D2-C36D1350D4AE}">
-					<ChildrenList>
-						<Action Name="" ID="{A5DE8DEA-04F5-41BE-9710-3EC1697063CD}" ShortID="93949008">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="LoseSFX" ID="{4D8D1F62-0421-4F95-A2B4-FCD4D161BD5D}" WorkUnitID="{5E89A391-8B09-4F67-959D-0CD33D6B5A3B}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{7DEF59A7-7229-482C-8BA1-2C3DDD072E46}" ShortID="459965148">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="3"/>
-							</PropertyList>
-							<ReferenceList/>
-							<ChildrenList>
-								<EventActionException Name="" ID="{1F080CBA-957F-4535-AC1D-F0996562C85F}">
-									<ReferenceList>
-										<Reference Name="Target">
-											<ObjectRef Name="LoseSFX" ID="{4D8D1F62-0421-4F95-A2B4-FCD4D161BD5D}" WorkUnitID="{5E89A391-8B09-4F67-959D-0CD33D6B5A3B}"/>
-										</Reference>
-									</ReferenceList>
-								</EventActionException>
-							</ChildrenList>
-						</Action>
-					</ChildrenList>
-				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
