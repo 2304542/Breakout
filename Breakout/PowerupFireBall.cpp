@@ -28,6 +28,6 @@ PowerupFireBall::~PowerupFireBall()
 std::pair<POWERUPS, float> PowerupFireBall::applyEffect()
 {
     _ball->setFireBall(5.0f);
-    AK::SoundEngine::SetState("BreakoutStates", "Fire");
+    AK::SoundEngine::SetState("BreakoutStates", "Fire");// muted, drum loop 
     return { fireBall, 5.0f };
 }

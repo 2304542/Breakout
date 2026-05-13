@@ -15,7 +15,7 @@ int main()
     sf::Clock clock;
     float deltaTime;
 	WwiseWrapper wwise;
-
+	// intialise wwise project
 	if (!wwise.initSoundEngine(AKTEXT("SFML Wwise Project/GeneratedSoundBanks/Windows")))
 	{
 		std::cout << "Could not initialise Wwise. Exiting." << std::endl;
@@ -23,7 +23,7 @@ int main()
 	}
 
 	
-	{
+	{// initialise soundbank 
 		AkBankID mainBankId;
 		if (AK::SoundEngine::LoadBank(AKTEXT("BreakoutSoundbank"), mainBankId) != AK_Success)
 		{
@@ -32,7 +32,7 @@ int main()
 	}
 
 	{
-		const uint64_t gameObjectId = 1;
+		const uint64_t gameObjectId = 1; // declaring events
 
 		AK::SoundEngine::RegisterGameObj(gameObjectId);
 

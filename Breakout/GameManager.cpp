@@ -98,7 +98,7 @@ void GameManager::loseLife()
 
 }
 
-void GameManager::heartbeatController() {
+void GameManager::heartbeatController() { // called in Ball.cpp, determines heartbeat intensity
     if (_lives == 2) {
         AK::SoundEngine::SetState("Lives", "TwoLives");
     }
@@ -121,7 +121,7 @@ void GameManager::render()
 void GameManager::levelComplete()
 {
     _levelComplete = true;
-    AK::SoundEngine::PostEvent(AKTEXT("Win"), 1);
+    AK::SoundEngine::PostEvent(AKTEXT("Win"), 1); // win event
 }
 
 

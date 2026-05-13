@@ -14,6 +14,6 @@ PowerupFastBall::~PowerupFastBall()
 std::pair<POWERUPS, float> PowerupFastBall::applyEffect()
 {
     _ball->setVelocity(2.f, 5.0f);
-    AK::SoundEngine::SetState("BreakoutStates", "Fast");
+    AK::SoundEngine::SetState("BreakoutStates", "Fast"); // increased tempo
     return { fastBall, 5.0f };
 }
