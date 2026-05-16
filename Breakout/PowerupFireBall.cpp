@@ -5,7 +5,7 @@ PowerupFireBall::PowerupFireBall(sf::RenderWindow* window, Paddle* paddle, Ball*
     : PowerupBase(window, paddle, ball)
 {
     
-    fireTexture.loadFromFile("Textures/Fire.jpg");
+    fireTexture.loadFromFile("Textures/Fire.jpg"); // loads texture -JM
     _sprite.setTexture(&fireTexture);
    
     
@@ -18,7 +18,7 @@ PowerupFireBall::~PowerupFireBall()
 
     if (pInteger != nullptr)
     {
-        // use my pointer to do things.
+        
     }
 
 
@@ -28,6 +28,6 @@ PowerupFireBall::~PowerupFireBall()
 std::pair<POWERUPS, float> PowerupFireBall::applyEffect()
 {
     _ball->setFireBall(5.0f);
-    AK::SoundEngine::SetState("BreakoutStates", "Fire");// muted, drum loop 
+    AK::SoundEngine::SetState("BreakoutStates", "Fire");// muted music and unmuted drum loop  -JM
     return { fireBall, 5.0f };
 }

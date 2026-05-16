@@ -98,12 +98,12 @@ void GameManager::loseLife()
 
 }
 
-void GameManager::heartbeatController() { // called in Ball.cpp, determines heartbeat intensity
+void GameManager::heartbeatController() { // called in Ball.cpp, determines heartbeat intensity -JM
     if (_lives == 2) {
-        AK::SoundEngine::SetState("Lives", "TwoLives");
+        AK::SoundEngine::SetState("Lives", "TwoLives"); // pitch increased by 9 semitones -JM
     }
     if (_lives == 1) {
-        AK::SoundEngine::SetState("Lives", "OneLife");
+        AK::SoundEngine::SetState("Lives", "OneLife"); // pitch increased by 10 more semitones. at maximum -JM
     }
 
 }
@@ -121,7 +121,8 @@ void GameManager::render()
 void GameManager::levelComplete()
 {
     _levelComplete = true;
-    AK::SoundEngine::PostEvent(AKTEXT("Win"), 1); // win event
+    // plays victory chime only when all bricks are cleared. called in BrickManager.cpp. -JM
+    AK::SoundEngine::PostEvent(AKTEXT("Win"), 1); // int value 1 represents gameObjectId declared in main.cpp. -JM 
 }
 
 

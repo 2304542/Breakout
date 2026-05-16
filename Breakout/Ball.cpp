@@ -17,7 +17,7 @@ Ball::~Ball()
 void Ball::update(float dt)
 {
     _gameManager->heartbeatController();
-    // check for powerup, tick down or correct
+    
     if (_timeWithPowerupEffect > 0.f)
     {
         _timeWithPowerupEffect -= dt;
@@ -25,11 +25,11 @@ void Ball::update(float dt)
     else
     {
         if (_velocity != VELOCITY)
-            _velocity = VELOCITY;   // reset speed.
+            _velocity = VELOCITY;   // reset speed
         else
         {
             setFireBall(0);    // disable fireball
-            _sprite.setFillColor(sf::Color::Cyan);  // back to normal colour.
+            _sprite.setFillColor(sf::Color::Cyan);  // back to normal colour
         }        
     }
 

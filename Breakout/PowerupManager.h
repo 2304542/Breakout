@@ -11,6 +11,7 @@
 #include "PowerupFireBall.h"
 #include "Paddle.h"
 #include "Ball.h"
+// includes necessary for Wwise declared here to avoid clutter in other files -JM
 #include <iostream>
 #include "WwiseWrapper.h"
 #include <AK/IBytes.h>
@@ -33,6 +34,6 @@ private:
     sf::RenderWindow* _window;
     Paddle* _paddle;
     Ball* _ball;
-    std::vector<PowerupBase*> _powerups;            // used to manage deletion.
-    std::optional<std::pair<POWERUPS, float>> _powerupInEffect;    // used for gameManager to get reference.
+    std::vector<PowerupBase*> _powerups;           
+    std::optional<std::pair<POWERUPS, float>> _powerupInEffect;    
 };

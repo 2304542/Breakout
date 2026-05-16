@@ -3,7 +3,7 @@
 PowerupSlowBall::PowerupSlowBall(sf::RenderWindow* window, Paddle* paddle, Ball* ball)
     : PowerupBase(window, paddle, ball)
 {
-    slowTexture.loadFromFile("Textures/Snail.png");
+    slowTexture.loadFromFile("Textures/Snail.png"); // loads texture -JM
     _sprite.setTexture(&slowTexture);
 }
 
@@ -14,6 +14,6 @@ PowerupSlowBall::~PowerupSlowBall()
 std::pair<POWERUPS, float> PowerupSlowBall::applyEffect()
 {
     _ball->setVelocity(0.5f, 5.0f);
-    AK::SoundEngine::SetState("BreakoutStates", "Slow"); // decreased tempo
+    AK::SoundEngine::SetState("BreakoutStates", "Slow"); // decreased tempo and pitch -JM
     return { slowBall, 5.0f };
 }
